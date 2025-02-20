@@ -285,6 +285,7 @@
 		728D2DC72D67DBA6001DDB68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_TOKEN = 8c4aa56e93f043fb8fa648e06a08c06c;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +314,7 @@
 		728D2DC82D67DBA6001DDB68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_TOKEN = 8c4aa56e93f043fb8fa648e06a08c06c;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
