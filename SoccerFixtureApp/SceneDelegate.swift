@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scenes)
         
         // Set the Tab Bar Controller as the root
-        window?.rootViewController = ViewController()
+        window?.rootViewController = GoMoneyTabBar()
         window?.makeKeyAndVisible()
     }
 
