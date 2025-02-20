@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		728D2DB42D67DBA6001DDB68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 728D2D952D67DBA5001DDB68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 728D2D9C2D67DBA5001DDB68;
+			remoteInfo = SoccerFixtureApp;
+		};
+		728D2DBE2D67DBA6001DDB68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 728D2D952D67DBA5001DDB68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 728D2D9C2D67DBA5001DDB68;
+			remoteInfo = SoccerFixtureApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		728D2D9D2D67DBA5001DDB68 /* SoccerFixtureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerFixtureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		728D2DB32D67DBA6001DDB68 /* SoccerFixtureAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerFixtureAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		728D2DBD2D67DBA6001DDB68 /* SoccerFixtureAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerFixtureAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		728D2DC52D67DBA6001DDB68 /* Exceptions for "SoccerFixtureApp" folder in "SoccerFixtureApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 728D2D9C2D67DBA5001DDB68 /* SoccerFixtureApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		728D2D9F2D67DBA5001DDB68 /* SoccerFixtureApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				728D2DC52D67DBA6001DDB68 /* Exceptions for "SoccerFixtureApp" folder in "SoccerFixtureApp" target */,
+			);
+			path = SoccerFixtureApp;
+			sourceTree = "<group>";
+		};
+		728D2DB62D67DBA6001DDB68 /* SoccerFixtureAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SoccerFixtureAppTests;
+			sourceTree = "<group>";
+		};
+		728D2DC02D67DBA6001DDB68 /* SoccerFixtureAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SoccerFixtureAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		728D2D9A2D67DBA5001DDB68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728D2DB02D67DBA6001DDB68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728D2DBA2D67DBA6001DDB68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		728D2D942D67DBA5001DDB68 = {
+			isa = PBXGroup;
+			children = (
+				728D2D9F2D67DBA5001DDB68 /* SoccerFixtureApp */,
+				728D2DB62D67DBA6001DDB68 /* SoccerFixtureAppTests */,
+				728D2DC02D67DBA6001DDB68 /* SoccerFixtureAppUITests */,
+				728D2D9E2D67DBA5001DDB68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		728D2D9E2D67DBA5001DDB68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				728D2D9D2D67DBA5001DDB68 /* SoccerFixtureApp.app */,
+				728D2DB32D67DBA6001DDB68 /* SoccerFixtureAppTests.xctest */,
+				728D2DBD2D67DBA6001DDB68 /* SoccerFixtureAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		728D2D9C2D67DBA5001DDB68 /* SoccerFixtureApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 728D2DC62D67DBA6001DDB68 /* Build configuration list for PBXNativeTarget "SoccerFixtureApp" */;
+			buildPhases = (
+				728D2D992D67DBA5001DDB68 /* Sources */,
+				728D2D9A2D67DBA5001DDB68 /* Frameworks */,
+				728D2D9B2D67DBA5001DDB68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				728D2D9F2D67DBA5001DDB68 /* SoccerFixtureApp */,
+			);
+			name = SoccerFixtureApp;
+			packageProductDependencies = (
+			);
+			productName = SoccerFixtureApp;
+			productReference = 728D2D9D2D67DBA5001DDB68 /* SoccerFixtureApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		728D2DB22D67DBA6001DDB68 /* SoccerFixtureAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 728D2DCB2D67DBA6001DDB68 /* Build configuration list for PBXNativeTarget "SoccerFixtureAppTests" */;
+			buildPhases = (
+				728D2DAF2D67DBA6001DDB68 /* Sources */,
+				728D2DB02D67DBA6001DDB68 /* Frameworks */,
+				728D2DB12D67DBA6001DDB68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				728D2DB52D67DBA6001DDB68 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				728D2DB62D67DBA6001DDB68 /* SoccerFixtureAppTests */,
+			);
+			name = SoccerFixtureAppTests;
+			packageProductDependencies = (
+			);
+			productName = SoccerFixtureAppTests;
+			productReference = 728D2DB32D67DBA6001DDB68 /* SoccerFixtureAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		728D2DBC2D67DBA6001DDB68 /* SoccerFixtureAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 728D2DCE2D67DBA6001DDB68 /* Build configuration list for PBXNativeTarget "SoccerFixtureAppUITests" */;
+			buildPhases = (
+				728D2DB92D67DBA6001DDB68 /* Sources */,
+				728D2DBA2D67DBA6001DDB68 /* Frameworks */,
+				728D2DBB2D67DBA6001DDB68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				728D2DBF2D67DBA6001DDB68 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				728D2DC02D67DBA6001DDB68 /* SoccerFixtureAppUITests */,
+			);
+			name = SoccerFixtureAppUITests;
+			packageProductDependencies = (
+			);
+			productName = SoccerFixtureAppUITests;
+			productReference = 728D2DBD2D67DBA6001DDB68 /* SoccerFixtureAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		728D2D952D67DBA5001DDB68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					728D2D9C2D67DBA5001DDB68 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					728D2DB22D67DBA6001DDB68 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 728D2D9C2D67DBA5001DDB68;
+					};
+					728D2DBC2D67DBA6001DDB68 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 728D2D9C2D67DBA5001DDB68;
+					};
+				};
+			};
+			buildConfigurationList = 728D2D982D67DBA5001DDB68 /* Build configuration list for PBXProject "SoccerFixtureApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 728D2D942D67DBA5001DDB68;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 728D2D9E2D67DBA5001DDB68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				728D2D9C2D67DBA5001DDB68 /* SoccerFixtureApp */,
+				728D2DB22D67DBA6001DDB68 /* SoccerFixtureAppTests */,
+				728D2DBC2D67DBA6001DDB68 /* SoccerFixtureAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		728D2D9B2D67DBA5001DDB68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728D2DB12D67DBA6001DDB68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728D2DBB2D67DBA6001DDB68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		728D2D992D67DBA5001DDB68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728D2DAF2D67DBA6001DDB68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		728D2DB92D67DBA6001DDB68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		728D2DB52D67DBA6001DDB68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 728D2D9C2D67DBA5001DDB68 /* SoccerFixtureApp */;
+			targetProxy = 728D2DB42D67DBA6001DDB68 /* PBXContainerItemProxy */;
+		};
+		728D2DBF2D67DBA6001DDB68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 728D2D9C2D67DBA5001DDB68 /* SoccerFixtureApp */;
+			targetProxy = 728D2DBE2D67DBA6001DDB68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		728D2DC72D67DBA6001DDB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHDBVA4HXP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoccerFixtureApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prof-K.SoccerFixtureApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		728D2DC82D67DBA6001DDB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHDBVA4HXP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoccerFixtureApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prof-K.SoccerFixtureApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		728D2DC92D67DBA6001DDB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		728D2DCA2D67DBA6001DDB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		728D2DCC2D67DBA6001DDB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHDBVA4HXP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prof-K.SoccerFixtureAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoccerFixtureApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SoccerFixtureApp";
+			};
+			name = Debug;
+		};
+		728D2DCD2D67DBA6001DDB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHDBVA4HXP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prof-K.SoccerFixtureAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoccerFixtureApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SoccerFixtureApp";
+			};
+			name = Release;
+		};
+		728D2DCF2D67DBA6001DDB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHDBVA4HXP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prof-K.SoccerFixtureAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoccerFixtureApp;
+			};
+			name = Debug;
+		};
+		728D2DD02D67DBA6001DDB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NHDBVA4HXP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prof-K.SoccerFixtureAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoccerFixtureApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		728D2D982D67DBA5001DDB68 /* Build configuration list for PBXProject "SoccerFixtureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728D2DC92D67DBA6001DDB68 /* Debug */,
+				728D2DCA2D67DBA6001DDB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		728D2DC62D67DBA6001DDB68 /* Build configuration list for PBXNativeTarget "SoccerFixtureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728D2DC72D67DBA6001DDB68 /* Debug */,
+				728D2DC82D67DBA6001DDB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		728D2DCB2D67DBA6001DDB68 /* Build configuration list for PBXNativeTarget "SoccerFixtureAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728D2DCC2D67DBA6001DDB68 /* Debug */,
+				728D2DCD2D67DBA6001DDB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		728D2DCE2D67DBA6001DDB68 /* Build configuration list for PBXNativeTarget "SoccerFixtureAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728D2DCF2D67DBA6001DDB68 /* Debug */,
+				728D2DD02D67DBA6001DDB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 728D2D952D67DBA5001DDB68 /* Project object */;
+}
