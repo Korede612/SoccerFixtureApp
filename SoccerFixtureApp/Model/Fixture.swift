@@ -8,7 +8,7 @@
 import Foundation
 
 struct Fixture: Codable {
-    let matches: [Matches]
+    var matches: [Matches]
 }
 
 struct Matches: Codable {
@@ -19,6 +19,19 @@ struct Matches: Codable {
     var lastUpdated: String?
     var homeTeam, awayTeam: PlayingTeams
     let score: Score
+}
+
+extension Matches {
+    init(model match: PersistedMatch) {
+        id = match.id
+        utcDate = match.utcDate
+        status = match.status
+        matchday = match.matchday
+        lastUpdated = match.lastUpdated
+        homeTeam = PlayingTeams(name: match.homeTeam?.name)
+        awayTeam = PlayingTeams(name: match.awayTeam?.name)
+        score = Score(fullTime: FullTime(homeTeam: match.score?.fullTime?.homeTeam, awayTeam: match.score?.fullTime?.awayTeam))
+    }
 }
 
 struct PlayingTeams: Codable {

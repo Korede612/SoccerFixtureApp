@@ -8,9 +8,8 @@
 import Foundation
 
 struct LeagueData: Codable{
-    let competitions: [Competition]
+    var competitions: [Competition]
 }
-
 
 struct Competition: Codable {
     let id: Int
@@ -22,8 +21,20 @@ struct Competition: Codable {
     var lastUpdated: String?
 }
 
+extension Competition {
+    init(model competition: PersistedCompetition) {
+        id = competition.id
+        area = Area(id: competition.area?.id, name: competition.area?.name)
+        name = competition.name
+        code = competition.code
+        plan = competition.plan
+        numberOfAvailableSeasons = competition.numberOfAvailableSeasons
+        lastUpdated = competition.lastUpdated
+    }
+}
+
 struct Area: Codable {
-    let id: Int
+    let id: Int?
     var name: String?
 }
 

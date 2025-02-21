@@ -9,26 +9,37 @@ import Foundation
 import Combine
 
 class CompetitionsViewModel {
-    var matches: [Competition]?
+    
+    var leagueData: LeagueData = LeagueData(competitions: [])
+    @Published var competition: [Competition] = []
     var competitionsService: GoMoneyCompetitionAPIProtocol = CompetitionsService()
+    var competitionPersistenceService: CompetitionPersistenceServiceInterface = CompetitionPersistenceService()
     
     private var subscriptions: Set<AnyCancellable> = Set<AnyCancellable>()
     
-    init() {
-        fetchCompetitions()
-    }
-    
     func fetchCompetitions() {
-        competitionsService.fetchCompetitionData()
-            .receive(on: RunLoop.main)
-            .sink { [weak self] completion in
-                print(completion)
-            } receiveValue: { [weak self] model in
-                guard let self else { return }
-                print("The result from the network call for competition is: \(model)")
-                matches = model
+        let leagueData = competitionPersistenceService.leagueData
+        
+        if isNewDay() || leagueData.isEmpty {
+            competitionsService.fetchCompetitionData()
+                .receive(on: RunLoop.main)
+                .sink { [weak self] completion in
+                    print(completion)
+                } receiveValue: { [weak self] model in
+                    guard let self else { return }
+                    self.leagueData.competitions = model
+                    competition = model
+                    competitionPersistenceService.addFixture(fixture: convertToLeaguePersistenceModel())
+                }
+                .store(in: &subscriptions)
+        } else {
+            leagueData.first?.competitions.forEach { savedCompetition in
+                let competition = Competition(model: savedCompetition)
+                self.competition.append(competition)
             }
-            .store(in: &subscriptions)
-        return
+        }
     }
 }
+
+extension CompetitionsViewModel: DateManager { }
+extension CompetitionsViewModel: ConvertToCompetionPesistenceModel { }
