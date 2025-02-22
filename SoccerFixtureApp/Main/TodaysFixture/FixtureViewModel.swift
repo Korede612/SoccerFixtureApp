@@ -20,7 +20,7 @@ class FixtureViewModel {
     func fetchFixture() {
         let savedFixture = fixturePersistenceService.allFixture
         
-        if isNewDay() || savedFixture.isEmpty {
+        if isNewDay(type: .fixtures) || savedFixture.isEmpty {
             fixtureService.fetchFixtureData()
                 .receive(on: RunLoop.main)
                 .sink { [weak self] completion in
@@ -31,6 +31,7 @@ class FixtureViewModel {
                     matches = fixture
                     let convertFixture = convertToFixturePersistenceModel()
                     fixturePersistenceService.addFixture(fixture: convertFixture)
+                    updateLastFetchDate(type: .fixtures)
                 }
                 .store(in: &subscriptions)
         } else {

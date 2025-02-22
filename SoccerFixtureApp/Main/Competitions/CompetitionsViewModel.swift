@@ -20,7 +20,7 @@ class CompetitionsViewModel {
     func fetchCompetitions() {
         let leagueData = competitionPersistenceService.leagueData
         
-        if isNewDay() || leagueData.isEmpty {
+        if isNewDay(type: .competition) || leagueData.isEmpty {
             competitionsService.fetchCompetitionData()
                 .receive(on: RunLoop.main)
                 .sink { [weak self] completion in
@@ -30,6 +30,7 @@ class CompetitionsViewModel {
                     self.leagueData.competitions = model
                     competition = model
                     competitionPersistenceService.addFixture(fixture: convertToLeaguePersistenceModel())
+                    updateLastFetchDate(type: .competition)
                 }
                 .store(in: &subscriptions)
         } else {

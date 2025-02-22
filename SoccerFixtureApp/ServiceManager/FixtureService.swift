@@ -20,8 +20,8 @@ class FixtureService: GoMoneyAPI<GoMoneyNetworking>, GoMoneyFixtureAPIProtocol {
                 .sink { completion in
                     print("Completion: \(completion)")
                 } receiveValue: { result in
-                    let userProfile = result.matches
-                    promise(.success(userProfile))
+                    let fixtures = result.matches
+                    promise(.success(fixtures))
                 }
                 .store(in: &self.subscriptions)
         }

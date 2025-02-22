@@ -24,7 +24,6 @@ extension ConvertToFixturePesistenceModel {
     
     func convertToFixturePersistenceModel() -> PersistedFixture {
         let convertedFixture = PersistedFixture()
-//        convertedFixture.id = fixture.id
         convertedFixture.matches = List<PersistedMatch>()
         _ = fixture.matches.map { match in
             let newMatch = convertToMatchPersistenceModel(match: match)

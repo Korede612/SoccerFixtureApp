@@ -44,7 +44,12 @@ extension CompetitionsVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+        let destinationVC = LeagueInfoVC()
+        let title = viewModel.competition[indexPath.row].name ?? ""
+        destinationVC.title = title
+        destinationVC.competition = viewModel.competition[indexPath.row]
+        setNavigationAndTabBar(hidden: true)
+        navigationController?.pushViewController(destinationVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

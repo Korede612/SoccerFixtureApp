@@ -8,26 +8,40 @@
 import Foundation
 
 protocol DateManager {
-    var lastFetchDateKey: String { get }
-    func isNewDay() -> Bool
-    func updateLastFetchDate()
+    func isNewDay(type: NetwokType) -> Bool
+    func updateLastFetchDate(type: NetwokType)
+}
+
+enum NetwokType {
+    case fixtures
+    case competition
+    case leagueInfo(code: String)
+    
+    var lastFetchDateKey: String {
+        switch self {
+        case .competition:
+            return "lastFetchDateForCompetition"
+        case .fixtures:
+            return "lastFetchDateForFixture"
+        case .leagueInfo(let code):
+            return "lastFetchDateForLeagureInfo\(code)"
+        }
+    }
 }
 
 extension DateManager {
-    var lastFetchDateKey: String {
-        return "lastFetchDate"
-    }
     
-    func isNewDay() -> Bool {
+    
+    func isNewDay(type: NetwokType) -> Bool {
         let currentDate = getCurrentDate()
-        let lastFetchDate = UserDefaults.standard.string(forKey: lastFetchDateKey)
+        let lastFetchDate = UserDefaults.standard.string(forKey: type.lastFetchDateKey)
         
         return lastFetchDate != currentDate
     }
     
-    func updateLastFetchDate() {
+    func updateLastFetchDate(type: NetwokType) {
         let currentDate = getCurrentDate()
-        UserDefaults.standard.set(currentDate, forKey: lastFetchDateKey)
+        UserDefaults.standard.set(currentDate, forKey: type.lastFetchDateKey)
     }
     
     private func getCurrentDate() -> String {

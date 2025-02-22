@@ -20,8 +20,8 @@ class CompetitionsService: GoMoneyAPI<GoMoneyNetworking>, GoMoneyCompetitionAPIP
                 .sink { completion in
                     print("Completion: \(completion)")
                 } receiveValue: { result in
-                    let userProfile = result.competitions
-                    promise(.success(userProfile))
+                    let competitions = result.competitions
+                    promise(.success(competitions))
                 }
                 .store(in: &self.subscriptions)
         }

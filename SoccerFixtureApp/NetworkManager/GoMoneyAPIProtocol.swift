@@ -14,3 +14,7 @@ protocol GoMoneyFixtureAPIProtocol {
 protocol GoMoneyCompetitionAPIProtocol {
     func fetchCompetitionData() -> Future<[Competition], Error>
 }
+
+protocol GoMoneyTablesAPIProtocol {
+    func fetchCompetitionData(code: String) -> Future<FootballStandingsResponse?, Error>
+}

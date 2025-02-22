@@ -10,6 +10,7 @@ import Foundation
 enum GoMoneyNetworking {
     case fetchFixture
     case fetchCompetitions
+    case leagueInfo(code: String)
 }
 
 extension GoMoneyNetworking: TargetType {
@@ -20,19 +21,21 @@ extension GoMoneyNetworking: TargetType {
             return "matches"
         case .fetchCompetitions:
             return "competitions"
+        case .leagueInfo(let code):
+            return "competitions/\(code)/standings"
         }
     }
     
     var method: HTTPMethod {
         switch self {
-        case .fetchFixture, .fetchCompetitions:
+        case .fetchFixture, .fetchCompetitions, .leagueInfo:
             return .get
         }
     }
     
     var task: Task {
         switch self {
-        case .fetchFixture, .fetchCompetitions:
+        case .fetchFixture, .fetchCompetitions, .leagueInfo:
             return .getRequest
         }
     }
